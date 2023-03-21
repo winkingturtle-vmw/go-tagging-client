@@ -13,6 +13,7 @@ func main() {
 	lib := lib.New("john")
 	lib.WithUsage("to do something")
 	lib.WithUsageText("usage text")
+	lib.WithArgsUsage("args")
 	lib.App.Action = func(c *cli.Context) error {
 		fmt.Println("Hello friend!")
 		return nil

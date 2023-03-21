@@ -10,14 +10,14 @@ import (
 )
 
 func main() {
-	app := lib.New("john")
-	app.Usage = "fight the loneliness!"
-	app.Action = func(c *cli.Context) error {
+	lib := lib.New("john")
+	lib.WithUsage("to do something")
+	lib.App.Action = func(c *cli.Context) error {
 		fmt.Println("Hello friend!")
 		return nil
 	}
 
-	err := app.Run(os.Args)
+	err := lib.App.Run(os.Args)
 	if err != nil {
 		log.Fatal(err)
 	}

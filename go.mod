@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/urfave/cli/v2 v2.25.0
-	github.com/winkingturtle-vmw/go-tagging/v2 v2.1.0
+	github.com/winkingturtle-vmw/go-tagging v0.0.0-20230321154127-7c722e178dcc
 )
 
 require (

@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/urfave/cli/v2"
-	"github.com/winkingturtle-vmw/go-tagging/v2/lib"
+	"github.com/winkingturtle-vmw/go-tagging/lib"
 )
 
 func main() {
